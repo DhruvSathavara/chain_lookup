@@ -18,7 +18,7 @@ import Landing from "../landing/Landing";
 const Markup = () => {
   const allroutes = [
     { url: "home", component: <Landing /> },
-    { url: "escrow", component: <Escrow /> },
+    { url: "serviceReq", component: <Escrow /> },
     /// Dashboard
     { url: "", component: <Home /> },
     { url: "dashboard", component: <Home /> }

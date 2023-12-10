@@ -9,7 +9,7 @@ export const MenuList = [
         title: 'Escrow',
         classsChange: 'mm-collapse',
         iconStyle: <i className="material-icons">next_week</i>,
-        to: 'escrow',
+        to: 'serviceReq',
     },
     {
         title: 'Lend / Borrow',

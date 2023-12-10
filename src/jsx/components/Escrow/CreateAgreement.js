@@ -105,11 +105,11 @@ export default function CreateAgreement() {
                                                 defaultValue={"option"}
                                                 className="form-control form-control-lg" aria-label="label for the select"
                                             >
-                                                <option value={JSON.stringify([ESCROW_FUJI_RECEIVER_CONTRACT_ADDRESS, "14767482510784806043", "Fuji",CCIP_TOKEN_ADDRESS_FUJI])}>Avalanche Fuji testnet</option>
-                                                <option value={JSON.stringify([ESCROW_MUMBAI_RECEIVER_CONTRACT_ADDRESS, "12532609583862916517", "Mumbai", CCIP_TOKEN_ADDRESS_MUMBAI])} >Mumbai testnet</option>
-                                                <option value={JSON.stringify(["0xa27727Aa9F790924c3f04cc69eC6692877A7187D", "16015286601757825753", "Sepolia", CCIP_TOKEN_ADDRESS_SEPOLIA])} >Sepolia testnet</option>
-                                                <option value={JSON.stringify(["0xa27727Aa9F790924c3f04cc69eC6692877A7187D", "13264668187771770619", "BNB"])}>BNB Chain testnet</option>
-                                                <option value={JSON.stringify(["0xa27727Aa9F790924c3f04cc69eC6692877A7187D", "5790810961207155433", "Base"])}>Base Goerli testnet</option>
+                                                <option value={JSON.stringify([ESCROW_FUJI_RECEIVER_CONTRACT_ADDRESS, "14767482510784806043", "Fuji",CCIP_TOKEN_ADDRESS_FUJI])}>Celo testnet</option>
+                                                <option value={JSON.stringify([ESCROW_MUMBAI_RECEIVER_CONTRACT_ADDRESS, "12532609583862916517", "Mumbai", CCIP_TOKEN_ADDRESS_MUMBAI])} >FEVM</option>
+                                                <option value={JSON.stringify(["0xa27727Aa9F790924c3f04cc69eC6692877A7187D", "16015286601757825753", "Sepolia", CCIP_TOKEN_ADDRESS_SEPOLIA])} >Base</option>
+                                                <option value={JSON.stringify(["0xa27727Aa9F790924c3f04cc69eC6692877A7187D", "13264668187771770619", "BNB"])}>Mantle </option>
+                                                <option value={JSON.stringify(["0xa27727Aa9F790924c3f04cc69eC6692877A7187D", "5790810961207155433", "Base"])}>Zeta chain</option>
 
                                             </select>
                                         </div>

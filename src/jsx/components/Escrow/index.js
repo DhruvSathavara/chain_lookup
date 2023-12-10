@@ -12,7 +12,7 @@ const Escrow = () => {
                     <div className="buy-sell">
                         <Nav className="nav nav-tabs" eventKey="nav-tab2" role="tablist" >
                             <Nav.Link as="button" className="" eventKey="Navbuy" type="button" style={{ textTransform: "none" }}>Request service </Nav.Link>
-                            <Nav.Link as="button" className="nav-link" eventKey="Navsell" type="button" style={{ textTransform: "none" }}>My Agreement</Nav.Link>
+                            <Nav.Link as="button" className="nav-link" eventKey="Navsell" type="button" style={{ textTransform: "none" }}>My Request</Nav.Link>
                         </Nav>
                     </div>
                     <Tab.Content  >

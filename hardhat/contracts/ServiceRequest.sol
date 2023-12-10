@@ -12,6 +12,7 @@ contract ServiceContract {
         uint256 serviceProviderStake;
         bool fundsReleased;
         bool completed;
+        bool offerAccepted;
     }
 
     mapping(uint256 => ServiceRequest) public agreements;
@@ -30,17 +31,20 @@ contract ServiceContract {
         );
         require(msg.value >= _amount, "Kindly provide required Stake");
 
-        ServiceRequest storage escrowAgreement = agreements[numOfAgreement];
-        escrowAgreement.agreementID = numOfAgreement;
-        escrowAgreement.description = _title;
-        escrowAgreement.client = _client;
-        escrowAgreement.serviceProvider = _serviceProvider;
+           ServiceRequest memory escrowAgreement = ServiceRequest(
+            numOfAgreement,
+            _title,
+            _client,
+            _serviceProvider,
+            _amount,
+            msg.value,
+            0,
+            false,
+            false , 
+            false
+        );
 
-        escrowAgreement.agreementAmount = _amount;
-        escrowAgreement.clientStake = msg.value;
-        escrowAgreement.serviceProviderStake = 0;
-        escrowAgreement.fundsReleased = false;
-        escrowAgreement.completed = false;
+            agreements[numOfAgreement] = escrowAgreement;
 
         numOfAgreement++;
     }
@@ -52,6 +56,10 @@ contract ServiceContract {
         );
 
         agreements[_agreementId].completed = true;
+    }
+    
+    function acceptOffer(uint256 _id) public {
+        agreements[_id].offerAccepted = true;
     }
 
     function stakeProviderEth(uint256 _agreementId) public payable {

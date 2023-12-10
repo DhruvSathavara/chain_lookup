@@ -181,10 +181,10 @@ export default function Agreements() {
                                                             </Card.Header>
                                                             <Card.Body>
                                                                 <ul>
-                                                                    <li onClick={() => acceptOffer(Agreement?.agreementID)} className='m-2'><small>0x3efCb574c30f02aDC54E035c04bF35FC731a9899</small> : 0.025 <button style={{ marginLeft: "1px" }} type="button" class="btn btn-primary btn-sm">Accept </button></li>
-                                                                    <li onClick={() => acceptOffer(Agreement?.agreementID)} className='m-2'><small>0x3efCb574c30f02aDC54E035c04bF35FC731a9899</small> : 0.02 <button style={{ marginLeft: "1px" }} type="button" class="btn btn-primary btn-sm">Accept </button></li>
-                                                                    <li onClick={() => acceptOffer(Agreement?.agreementID)} className='m-2'><small>0x3efCb574c30f02aDC54E035c04bF35FC731a9899</small> : 0.015 <button style={{ marginLeft: "1px" }} type="button" class="btn btn-primary btn-sm">Accept </button></li>
-                                                                    <li onClick={() => acceptOffer(Agreement?.agreementID)} className='m-2'><small>0x3efCb574c30f02aDC54E035c04bF35FC731a9899</small> : 0.022 <button style={{ marginLeft: "1px" }} type="button" class="btn btn-primary btn-sm">Accept </button></li>
+                                                                    <li onClick={() => acceptOffer(Agreement?.agreementID)} className='m-2'><small>0x3efCb574c30f02aDC54E035c04bF35FC731a9899</small> : 0.35 <button style={{ marginLeft: "1px" }} type="button" class="btn btn-primary btn-sm">Accept </button></li>
+                                                                    <li onClick={() => acceptOffer(Agreement?.agreementID)} className='m-2'><small>0xF7B0d150834bdb5A0B3278564D1c94d2d1d531c5</small> : 0.02 <button style={{ marginLeft: "1px" }} type="button" class="btn btn-primary btn-sm">Accept </button></li>
+                                                                    <li onClick={() => acceptOffer(Agreement?.agreementID)} className='m-2'><small>0x46a1C27dECaFB490555377cd6960B8121E334ebd</small> : 0.15 <button style={{ marginLeft: "1px" }} type="button" class="btn btn-primary btn-sm">Accept </button></li>
+                                                                    <li onClick={() => acceptOffer(Agreement?.agreementID)} className='m-2'><small>0x3efCb574c30f02aDC54E035c04bF35FC731a9899</small> : 0.22 <button style={{ marginLeft: "1px" }} type="button" class="btn btn-primary btn-sm">Accept </button></li>
 
                                                                 </ul>
 
